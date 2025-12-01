@@ -13,65 +13,49 @@ Source: NBA shot-level data, 2015–2016 season
 Features Used:
 
 Player identity
-
 Team
+Shot type 
+Court zone 
+Target Variable: SHOT_MADE_FLAG 
 
-Shot type (layup, jump shot, etc.)
-
-Court zone (restricted area, mid-range, three-point)
-
-Target Variable: SHOT_MADE_FLAG (1 = made, 0 = missed)
 
 Preprocessing:
 
 Categorical variables are one-hot encoded
-
 Backcourt shots removed for relevance
-
 Only shots with sufficient frequency considered in final tables
-
 Methods
 
 Model: XGBoost Classifier
 
 Gradient boosting framework: each tree corrects errors of previous trees
-
 Probability output for each shot
 
 Pipeline:
 
 One-hot encoding for categorical variables
-
 Randomized hyperparameter search with 3-fold cross-validation
 
 Metrics Evaluated:
 
 Classification: Accuracy, Precision, Recall, F1 Score
-
 Probability-based: Log Loss, Brier Score, AUC-ROC
-
 Calibration curves to assess probability reliability
 
 Output:
 
 Expected points per player per shot type and court zone
-
 Comparison with true shooting percentages
 
 Usage
 
 Clone the repository:
-
 git clone <repository_url>
 
-
-Install dependencies (Python 3.10+ recommended):
-
+Install dependencies:
 pip install -r requirements.txt
 
-
 Run the model training and evaluation notebook:
-
 jupyter notebook NBA_XGBoost_Shot_Recommendation.ipynb
 
 
@@ -82,7 +66,6 @@ Key Findings
 League Level:
 
 Predicted shot success closely matches actual success (45.46% vs. 45.36%)
-
 Accuracy: 65%, F1: 0.557, Precision: 66.5%, Recall: 48%
 
 Probability metrics show improvements over baseline: Log Loss 0.6213, Brier Score 0.2167, AUC-ROC 0.693
@@ -90,9 +73,7 @@ Probability metrics show improvements over baseline: Log Loss 0.6213, Brier Scor
 Team Level (Washington Wizards):
 
 Predicted success: 47.15%, actual success: 46.18%
-
 Accuracy: 73.8%, F1: 0.687, Precision: 76.5%, Recall: 62.4%
-
 Probability metrics show significant improvement: Log Loss 0.5593, Brier Score 0.1878, AUC-ROC 0.778
 
 Insights:
@@ -114,23 +95,16 @@ NBA_XGBoost_Shot_Recommendation/
 Dependencies
 
 pandas
-
 numpy
-
 scikit-learn
-
 xgboost
-
 seaborn
-
 matplotlib
 
 References
 
 NBA shot-level data, 2015–2016 season
-
-XGBoost Documentation: https://xgboost.readthedocs.io
-
+XGBoost Documentation: 
 Basketball analytics literature on expected points and shot success modeling
 
 
