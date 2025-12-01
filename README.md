@@ -79,18 +79,8 @@ Probability metrics show significant improvement: Log Loss 0.5593, Brier Score 0
 Insights:
 
 Model well-calibrated and more effective for team-specific predictions
-
 Identifies high-value and low-value shooting zones for strategic decision-making
 
-File Structure
-NBA_XGBoost_Shot_Recommendation/
-│
-├─ data/                  # Raw and processed shot-level data
-├─ notebooks/             # Jupyter notebooks with analysis and model training
-├─ src/                   # Python scripts for model pipeline and evaluation
-├─ figures/               # Plots and heatmaps of shot metrics
-├─ requirements.txt       # Python dependencies
-└─ README.md
 
 Dependencies
 
