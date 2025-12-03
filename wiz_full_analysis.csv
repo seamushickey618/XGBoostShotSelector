@@ -1,60 +1,58 @@
-PLAYER_NAME,SHOT_ZONE,ACTION_TYPE,# of shots,% correct predictions,expected pts,true avg pts
-Marcin Gortat,Restricted Area - Center(C) - Less Than 8 ft.,Cutting Layup Shot,52,92.3%,1.7945116758346558,1.8461538461538463
-John Wall,Restricted Area - Center(C) - Less Than 8 ft.,Driving Finger Roll Layup Shot,37,94.6%,1.7682199478149414,1.8918918918918919
-Nene,Restricted Area - Center(C) - Less Than 8 ft.,Driving Layup Shot,20,80.0%,1.6223214864730835,1.6
-Ramon Sessions,Restricted Area - Center(C) - Less Than 8 ft.,Driving Layup Shot,61,77.0%,1.5856740474700928,1.540983606557377
-Bradley Beal,Restricted Area - Center(C) - Less Than 8 ft.,Driving Layup Shot,51,80.4%,1.5594656467437744,1.607843137254902
-Marcin Gortat,Restricted Area - Center(C) - Less Than 8 ft.,Tip Layup Shot,26,76.9%,1.5498806238174438,1.5384615384615385
-John Wall,Restricted Area - Center(C) - Less Than 8 ft.,Driving Layup Shot,97,72.2%,1.5066839456558228,1.443298969072165
-Ramon Sessions,Restricted Area - Center(C) - Less Than 8 ft.,Running Layup Shot,22,72.7%,1.4987703561782837,1.4545454545454546
-John Wall,Mid-Range - Left Side Center(LC) - 16-24 ft.,Pullup Jump shot,31,77.4%,1.4308916330337524,1.5483870967741935
-John Wall,Restricted Area - Center(C) - Less Than 8 ft.,Running Layup Shot,55,72.7%,1.4080678224563599,1.4545454545454546
-John Wall,Mid-Range - Center(C) - 16-24 ft.,Pullup Jump shot,30,80.0%,1.4073106050491333,1.6
-John Wall,Mid-Range - Right Side Center(RC) - 16-24 ft.,Pullup Jump shot,45,71.1%,1.4039579629898071,1.4222222222222223
-Marcin Gortat,In The Paint (Non-RA) - Center(C) - Less Than 8 ft.,Hook Shot,25,72.0%,1.2891157865524292,1.44
-Otto Porter Jr.,Right Corner 3 - Right Side(R) - 24+ ft.,Jump Shot,52,61.5%,1.2685572803020477,1.1538461538461537
-Jared Dudley,Above the Break 3 - Center(C) - 24+ ft.,Jump Shot,43,60.5%,1.246805727481842,1.186046511627907
-Garrett Temple,Right Corner 3 - Right Side(R) - 24+ ft.,Jump Shot,59,62.7%,1.1041273176670074,1.11864406779661
-Otto Porter Jr.,Above the Break 3 - Center(C) - 24+ ft.,Jump Shot,30,60.0%,1.0908309817314148,1.2
-Bradley Beal,Left Corner 3 - Left Side(L) - 24+ ft.,Jump Shot,26,53.8%,1.0738967657089233,1.3846153846153846
-Jared Dudley,Above the Break 3 - Right Side Center(RC) - 24+ ft.,Jump Shot,113,66.4%,1.0649086833000183,1.008849557522124
-Kris Humphries,Above the Break 3 - Center(C) - 24+ ft.,Jump Shot,24,58.3%,1.0364790558815002,1.25
-Markieff Morris,Above the Break 3 - Left Side Center(LC) - 24+ ft.,Jump Shot,21,71.4%,1.028687596321106,0.8571428571428571
-Otto Porter Jr.,Above the Break 3 - Right Side Center(RC) - 24+ ft.,Jump Shot,61,67.2%,1.0264109373092651,0.9836065573770492
-Ramon Sessions,Above the Break 3 - Left Side Center(LC) - 24+ ft.,Jump Shot,39,61.5%,0.9935002326965332,1.1538461538461537
-Bradley Beal,Above the Break 3 - Right Side Center(RC) - 24+ ft.,Jump Shot,67,61.2%,0.9330379664897919,1.164179104477612
-John Wall,Above the Break 3 - Center(C) - 24+ ft.,Jump Shot,60,63.3%,0.9177136123180389,1.1
-Bradley Beal,Above the Break 3 - Center(C) - 24+ ft.,Jump Shot,32,78.1%,0.913008838891983,0.65625
-Otto Porter Jr.,Mid-Range - Left Side(L) - 16-24 ft.,Jump Shot,24,54.2%,0.8553698062896729,0.9166666666666666
-Bradley Beal,Above the Break 3 - Left Side Center(LC) - 24+ ft.,Jump Shot,97,67.0%,0.852950245141983,0.9896907216494846
-John Wall,Above the Break 3 - Left Side Center(LC) - 24+ ft.,Jump Shot,93,72.0%,0.7959947884082794,0.8387096774193549
-Otto Porter Jr.,Mid-Range - Left Side Center(LC) - 16-24 ft.,Jump Shot,30,60.0%,0.791257917881012,0.8
-Jared Dudley,Mid-Range - Left Side Center(LC) - 16-24 ft.,Jump Shot,20,65.0%,0.7885096669197083,0.7
-Jared Dudley,Mid-Range - Center(C) - 16-24 ft.,Jump Shot,29,65.5%,0.7716091871261597,0.6896551724137931
-John Wall,Above the Break 3 - Right Side Center(RC) - 24+ ft.,Jump Shot,105,66.7%,0.7544524669647217,1.0
-Jared Dudley,Mid-Range - Right Side Center(RC) - 16-24 ft.,Jump Shot,42,59.5%,0.7323054075241089,0.8095238095238095
-John Wall,Left Corner 3 - Left Side(L) - 24+ ft.,Jump Shot,24,87.5%,0.6901863813400269,0.375
-Ramon Sessions,Above the Break 3 - Right Side Center(RC) - 24+ ft.,Jump Shot,31,87.1%,0.6589628756046295,0.3870967741935484
-Otto Porter Jr.,Mid-Range - Right Side(R) - 16-24 ft.,Jump Shot,33,72.7%,0.6550403833389282,0.5454545454545454
-Marcin Gortat,In The Paint (Non-RA) - Center(C) - 8-16 ft.,Jump Shot,24,75.0%,0.5949020385742188,0.5
-Ramon Sessions,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,107,72.9%,0.5816875696182251,0.5420560747663551
-Kelly Oubre Jr.,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,30,73.3%,0.537965714931488,0.5333333333333333
-Marcin Gortat,Mid-Range - Right Side(R) - 8-16 ft.,Jump Shot,38,73.7%,0.537236213684082,0.5263157894736842
-Marcin Gortat,Mid-Range - Left Side(L) - 8-16 ft.,Jump Shot,37,78.4%,0.5228015780448914,0.43243243243243246
-Marcin Gortat,In The Paint (Non-RA) - Center(C) - Less Than 8 ft.,Jump Shot,70,72.9%,0.5208485722541809,0.5428571428571428
-Bradley Beal,Mid-Range - Right Side Center(RC) - 16-24 ft.,Jump Shot,29,75.9%,0.507949709892273,0.4827586206896552
-Bradley Beal,Mid-Range - Left Side(L) - 16-24 ft.,Jump Shot,20,80.0%,0.4871024191379547,0.4
-John Wall,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,125,84.0%,0.4316365718841553,0.32
-Bradley Beal,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,57,78.9%,0.4017631709575653,0.42105263157894735
-Bradley Beal,Mid-Range - Left Side(L) - 8-16 ft.,Jump Shot,21,81.0%,0.39683064818382263,0.38095238095238093
-Garrett Temple,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,51,88.2%,0.39616093039512634,0.23529411764705882
-Bradley Beal,Mid-Range - Right Side(R) - 8-16 ft.,Jump Shot,22,81.8%,0.3721037209033966,0.36363636363636365
-John Wall,Mid-Range - Left Side Center(LC) - 16-24 ft.,Jump Shot,55,85.5%,0.3668833374977112,0.2909090909090909
-John Wall,Mid-Range - Left Side(L) - 16-24 ft.,Jump Shot,20,90.0%,0.3642215430736542,0.2
-John Wall,Mid-Range - Right Side(R) - 16-24 ft.,Jump Shot,23,91.3%,0.36411014199256897,0.17391304347826086
-John Wall,Mid-Range - Center(C) - 16-24 ft.,Jump Shot,64,85.9%,0.3571065366268158,0.28125
-John Wall,Mid-Range - Right Side Center(RC) - 16-24 ft.,Jump Shot,88,88.6%,0.33088474974713544,0.22727272727272727
-John Wall,Mid-Range - Right Side(R) - 8-16 ft.,Jump Shot,26,88.5%,0.3290131688117981,0.23076923076923078
-Bradley Beal,In The Paint (Non-RA) - Center(C) - Less Than 8 ft.,Jump Shot,28,89.3%,0.3031623661518097,0.21428571428571427
-John Wall,Mid-Range - Left Side(L) - 8-16 ft.,Jump Shot,22,86.4%,0.26046013832092285,0.2727272727272727
-Ramon Sessions,In The Paint (Non-RA) - Center(C) - Less Than 8 ft.,Jump Shot,34,97.1%,0.21166586875915527,0.058823529411764705
+Player,Court Zone,Shot Type,% correct predictions,expected pts,true avg pts
+Marcin Gortat,Restricted Area - Center(C) - Less Than 8 ft.,Cutting Layup Shot,92.3%,1.7709745168685913,1.8461538461538463
+John Wall,Restricted Area - Center(C) - Less Than 8 ft.,Driving Finger Roll Layup Shot,94.6%,1.7242329120635986,1.8918918918918919
+Marcin Gortat,Restricted Area - Center(C) - Less Than 8 ft.,Tip Layup Shot,76.9%,1.4772361516952515,1.5384615384615385
+Ramon Sessions,Restricted Area - Center(C) - Less Than 8 ft.,Driving Layup Shot,77.0%,1.4769207239151,1.540983606557377
+Bradley Beal,Restricted Area - Center(C) - Less Than 8 ft.,Driving Layup Shot,80.4%,1.467106580734253,1.607843137254902
+John Wall,Restricted Area - Center(C) - Less Than 8 ft.,Running Layup Shot,72.7%,1.4576823711395264,1.4545454545454546
+John Wall,Restricted Area - Center(C) - Less Than 8 ft.,Driving Layup Shot,72.2%,1.4459275007247925,1.443298969072165
+John Wall,Mid-Range - Left Side Center(LC) - 16-24 ft.,Pullup Jump shot,77.4%,1.4251766204833984,1.5483870967741935
+John Wall,Mid-Range - Center(C) - 16-24 ft.,Pullup Jump shot,80.0%,1.3946607112884521,1.6
+John Wall,Mid-Range - Right Side Center(RC) - 16-24 ft.,Pullup Jump shot,71.1%,1.386245846748352,1.4222222222222223
+Jared Dudley,Right Corner 3 - Right Side(R) - 24+ ft.,Jump Shot,50.0%,1.3200918138027191,1.5
+Marcin Gortat,In The Paint (Non-RA) - Center(C) - Less Than 8 ft.,Hook Shot,72.0%,1.2875182628631592,1.44
+Otto Porter Jr.,Right Corner 3 - Right Side(R) - 24+ ft.,Jump Shot,61.5%,1.1433092057704926,1.1538461538461537
+Garrett Temple,Right Corner 3 - Right Side(R) - 24+ ft.,Jump Shot,62.7%,1.1214255094528198,1.11864406779661
+Jared Dudley,Above the Break 3 - Center(C) - 24+ ft.,Jump Shot,60.5%,1.0872203707695007,1.186046511627907
+Otto Porter Jr.,Left Corner 3 - Left Side(L) - 24+ ft.,Jump Shot,66.0%,1.055308610200882,1.0212765957446808
+Jared Dudley,Above the Break 3 - Right Side Center(RC) - 24+ ft.,Jump Shot,66.4%,1.0424123704433441,1.008849557522124
+Bradley Beal,Left Corner 3 - Left Side(L) - 24+ ft.,Jump Shot,53.8%,1.0307584404945374,1.3846153846153846
+Garrett Temple,Left Corner 3 - Left Side(L) - 24+ ft.,Jump Shot,65.1%,1.0244126915931702,1.0476190476190477
+Otto Porter Jr.,Above the Break 3 - Left Side Center(LC) - 24+ ft.,Jump Shot,63.1%,1.006624549627304,1.1076923076923078
+Otto Porter Jr.,Above the Break 3 - Right Side Center(RC) - 24+ ft.,Jump Shot,67.2%,0.9870776832103729,0.9836065573770492
+Otto Porter Jr.,Above the Break 3 - Center(C) - 24+ ft.,Jump Shot,60.0%,0.9814389646053314,1.2
+Kelly Oubre Jr.,Above the Break 3 - Left Side Center(LC) - 24+ ft.,Jump Shot,52.0%,0.9793125092983246,1.44
+Garrett Temple,Above the Break 3 - Left Side Center(LC) - 24+ ft.,Jump Shot,72.7%,0.9686006605625153,0.8181818181818182
+Bradley Beal,Above the Break 3 - Left Side Center(LC) - 24+ ft.,Jump Shot,67.0%,0.9652507603168488,0.9896907216494846
+Bradley Beal,Above the Break 3 - Right Side Center(RC) - 24+ ft.,Jump Shot,61.2%,0.9626631438732147,1.164179104477612
+Garrett Temple,Above the Break 3 - Right Side Center(RC) - 24+ ft.,Jump Shot,66.1%,0.9603360593318939,1.0169491525423728
+Jared Dudley,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,28.6%,0.9504916667938232,1.4285714285714286
+John Wall,Above the Break 3 - Center(C) - 24+ ft.,Jump Shot,63.3%,0.9400074183940887,1.1
+Ramon Sessions,Above the Break 3 - Left Side Center(LC) - 24+ ft.,Jump Shot,61.5%,0.9381976425647736,1.1538461538461537
+Bradley Beal,Above the Break 3 - Center(C) - 24+ ft.,Jump Shot,78.1%,0.9271092116832733,0.65625
+Marcin Gortat,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,55.6%,0.8521609902381897,0.8873239436619719
+John Wall,Above the Break 3 - Left Side Center(LC) - 24+ ft.,Jump Shot,72.0%,0.8171770870685577,0.8387096774193549
+John Wall,Above the Break 3 - Right Side Center(RC) - 24+ ft.,Jump Shot,66.7%,0.780794620513916,1.0
+Otto Porter Jr.,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,58.7%,0.7799095511436462,0.8253968253968254
+Ramon Sessions,Above the Break 3 - Right Side Center(RC) - 24+ ft.,Jump Shot,87.1%,0.7788116633892059,0.3870967741935484
+Jared Dudley,Mid-Range - Right Side Center(RC) - 16-24 ft.,Jump Shot,59.5%,0.7394880652427673,0.8095238095238095
+Jared Dudley,Mid-Range - Center(C) - 16-24 ft.,Jump Shot,65.5%,0.7337052822113037,0.6896551724137931
+Nene,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,67.3%,0.7172343730926514,0.6545454545454545
+Ramon Sessions,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,72.9%,0.6842434406280518,0.5420560747663551
+Kelly Oubre Jr.,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,73.3%,0.6833611726760864,0.5333333333333333
+Otto Porter Jr.,Mid-Range - Left Side Center(LC) - 16-24 ft.,Jump Shot,60.0%,0.675606906414032,0.8
+Otto Porter Jr.,Mid-Range - Right Side(R) - 16-24 ft.,Jump Shot,72.7%,0.6690647006034851,0.5454545454545454
+Nene,Mid-Range - Center(C) - 16-24 ft.,Jump Shot,61.5%,0.6549573540687561,0.7692307692307693
+Bradley Beal,Mid-Range - Right Side Center(RC) - 16-24 ft.,Jump Shot,75.9%,0.6287029981613159,0.4827586206896552
+Marcin Gortat,Mid-Range - Right Side(R) - 8-16 ft.,Jump Shot,73.7%,0.56239253282547,0.5263157894736842
+Marcin Gortat,Mid-Range - Left Side(L) - 8-16 ft.,Jump Shot,78.4%,0.5368837118148804,0.43243243243243246
+Bradley Beal,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,78.9%,0.5328375697135925,0.42105263157894735
+John Wall,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,84.0%,0.5231518745422363,0.32
+Garrett Temple,Restricted Area - Center(C) - Less Than 8 ft.,Layup Shot,88.2%,0.509505569934845,0.23529411764705882
+Marcin Gortat,In The Paint (Non-RA) - Center(C) - Less Than 8 ft.,Jump Shot,72.9%,0.5028952956199646,0.5428571428571428
+John Wall,Mid-Range - Center(C) - 16-24 ft.,Jump Shot,85.9%,0.4241591691970825,0.28125
+John Wall,Mid-Range - Left Side Center(LC) - 16-24 ft.,Jump Shot,85.5%,0.4230542778968811,0.2909090909090909
+John Wall,Mid-Range - Right Side Center(RC) - 16-24 ft.,Jump Shot,88.6%,0.412225899879228,0.22727272727272727
+Bradley Beal,In The Paint (Non-RA) - Center(C) - Less Than 8 ft.,Jump Shot,89.3%,0.37788254022598267,0.21428571428571427
+John Wall,Mid-Range - Right Side(R) - 8-16 ft.,Jump Shot,88.5%,0.35856592655181885,0.23076923076923078
+Ramon Sessions,In The Paint (Non-RA) - Center(C) - Less Than 8 ft.,Jump Shot,97.1%,0.333435982465744,0.058823529411764705
