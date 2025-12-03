@@ -3,3 +3,4 @@ xgboost
 matplotlib
 numpy
 pandas
+seaborn
