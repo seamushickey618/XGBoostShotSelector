@@ -52,7 +52,7 @@ Clone the repository:
 
 
 Install dependencies:
-`pip install -r Requirements.txt`
+`pip install -r requirements.txt`
 
 
 Run the notebook:
