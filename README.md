@@ -8,7 +8,7 @@ The primary goal is to assess the reliability of XGBoost for predicting shot suc
 
 **Data**
 
-**Source**: https://github.com/wyatt-ai/nba-movement-data/tree/master/data/shots : shots.csv
+**Source**: https://github.com/wyatt-ai/nba-movement-data/tree/master/data/shots : `shots.csv`
 
 NBA shot-level data, 2015–2016 season
 
@@ -30,17 +30,17 @@ NBA shot-level data, 2015–2016 season
 - Only shots with sufficient frequency considered in final table
 
 
-**Model: XGBoost Classifier**
+**Model: XGBoost Classifier & Module**
 
 - Gradient boosting framework: each tree corrects errors of previous trees
 Probability output for each shot
 
-- *Stored in XGModel.py module*, for functions including: tuning hyper-parameters and running the model (train_xgb_tuned), running the model with fixed hyperparameters (league_xgb_tuned) and ranking teams based on model accuracy score (make_team_ranking_report)
+- *`XGModel.py` module*, stores functions including: tuning hyperparameters and running the model `train_xgb_tuned`, running the model with fixed hyperparameters `league_xgb_tuned` and ranking teams based on model accuracy score `make_team_ranking_report`
 
 **Pipeline:**
 
 - One-hot encoding for categorical variables
-= Randomized hyperparameter search with 3-fold cross-validation
+- Randomized hyperparameter search with 3-fold cross-validation
 
 
 **Metrics Evaluated:** Accuracy, Confusion Matrices
@@ -55,25 +55,25 @@ Probability output for each shot
 **Usage**
 
 Clone the repository:
-git clone https://github.com/seamushickey618/XGBoostShotSelector/tree/main
+`git clone https://github.com/seamushickey618/XGBoostShotSelector/tree/main`
 
 
 Install dependencies:
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
 Run the model training and evaluation notebook:
-jupyter notebook Main.ipynb
+`jupyter notebook Main.ipynb`
 
 
 Dependencies
 
-pandas
+`pandas
 numpy
 scikit-learn
 xgboost
 seaborn
-matplotlib
+matplotlib`
 
 
 Final Report Visualization:
