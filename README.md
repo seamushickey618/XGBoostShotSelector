@@ -50,7 +50,16 @@ Probability output for each shot
 
 - Expected points per player per shot type and court zone
 - Comparison with true shooting percentages
+- `wiz_full_analysis.csv` contains results from all Wizards shots taken over 25 times
 
+**Other softwares used in project:** 
+- Excel: used to isolate the results for the starting 5 players after full analysis stage
+- Tableau: used for the visualization of the final report
+
+**Use of ChatGPT:** 
+- Guidance on model structure and navigating libraries `scikit-learn` and `xgboost`
+- Troubleshooting syntax 
+- Visualizing confusion matrices in `seaborn`
 
 **Usage**
 
@@ -78,4 +87,5 @@ matplotlib`
 
 Final Report Visualization:
 
-<img width="1337" height="1116" alt="Sheet 1 (8)" src="https://github.com/user-attachments/assets/8fc98f06-9ac0-4925-be55-07466ba2de11" />
+<img width="1274" height="1024" alt="Sheet 4" src="https://github.com/user-attachments/assets/f115d9b7-142e-4192-8976-a7794aea01b3" />
+
