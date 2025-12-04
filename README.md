@@ -1,6 +1,6 @@
 # XGBoostShotClassifier
 
-Project Overview
+*Project Overview*
 
 This project develops an XGBoost-based model to predict shot outcomes in the NBA using shot-level data from the 2015–2016 season. The model estimates the probability of making each shot based on player identity, team, shot type, and court zone. These probabilities are weighted by shot value (2 or 3 points) to generate expected points tables for players across all shot types and court areas.
 
