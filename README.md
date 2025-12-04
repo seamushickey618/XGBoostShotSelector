@@ -71,7 +71,8 @@ jupyter`
 
 
 Final Report Visualization made in Tableau using the `wiz_full_analysis.csv` filtered to include only the starting 5 players
-Link to Tableau Viz: https://public.tableau.com/app/profile/seamus.hickey/viz/Wizards_Shot_Model_Analysis/Sheet4
+
+- Link to Tableau Viz: https://public.tableau.com/app/profile/seamus.hickey/viz/Wizards_Shot_Model_Analysis/Sheet4
 
 <img width="1274" height="1024" alt="Sheet 4" src="https://github.com/user-attachments/assets/f115d9b7-142e-4192-8976-a7794aea01b3" />
 
