@@ -1,16 +1,15 @@
 from sklearn.model_selection import train_test_split, RandomizedSearchCV
+from sklearn.metrics import accuracy_score, make_scorer, confusion_matrix, ConfusionMatrixDisplay
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from xgboost import XGBClassifier
-from sklearn.metrics import accuracy_score, make_scorer, confusion_matrix, ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
-from sklearn.calibration import calibration_curve
 import seaborn as sns
 import numpy as np
+import pandas as pd
 import warnings
 warnings.filterwarnings("ignore", message=".*use_label_encoder.*")
-import pandas as pd
 
 
 # --------------------------
@@ -24,7 +23,9 @@ def train_xgb_tuned(shots, features, target, param_grid):
     X = shots[features]
     y = shots[target]
 
+    # --------------------------
     # Identify and one-hot encode categorical features
+    # --------------------------
     cat_features = [c for c in X.columns if X[c].dtype == "object"]
     preprocessor = ColumnTransformer(
         [("cat", OneHotEncoder(handle_unknown="ignore"), cat_features)],
@@ -159,6 +160,7 @@ def league_xgb_tuned(shots, features, target):
             eval_metric="logloss",
             n_jobs=1,
             random_state=42,
+            
             # --------------------------
             # FIXED HYPERPARAMETERS
             # --------------------------
@@ -264,7 +266,7 @@ def make_team_ranking_report(shots, features, model):
     for team in teams:
         team_df = shots[shots["TEAM_NAME"] == team]
 
-        # Raw features (pipeline for one-hot encoding)
+        # Raw features 
         X_team = team_df[features]
         y_true = team_df["SHOT_MADE_FLAG"]
 
@@ -286,7 +288,7 @@ def make_team_ranking_report(shots, features, model):
     # Sort
     df_sorted = df.sort_values("Accuracy", ascending=False)
 
-    print("\n================ TEAM PERFORMANCE TABLE ================")
+    print("\n TEAM ACCURACCY TABLE ")
     print(df_sorted.to_string(index=False))
 
     return df_sorted
