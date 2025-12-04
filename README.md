@@ -9,7 +9,7 @@ The primary goal is to assess the reliability of XGBoost for predicting shot suc
 **Data**
 
 **Source**: NBA shot-level data, 2015–2016 season
-
+https://github.com/wyatt-ai/nba-movement-data/tree/master/data/shots 
 
 **Features Used:**
 
@@ -18,7 +18,8 @@ The primary goal is to assess the reliability of XGBoost for predicting shot suc
 - Shot type 
 - Court zone 
 
-- Target Variable: SHOT_MADE_FLAG 
+
+**Target Variable:** Shot made / missed
 
 
 **Preprocessing:**
