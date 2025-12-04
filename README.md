@@ -44,6 +44,7 @@ NBA shot-level data, 2015–2016 season
 - Assistance navigating libraries `scikit-learn` and `xgboost`
 - Troubleshooting syntax 
 - Visualizing confusion matrices in `seaborn`
+- Warning filter & error handling
   
 **Usage**
 
