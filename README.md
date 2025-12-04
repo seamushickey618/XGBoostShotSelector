@@ -1,17 +1,17 @@
 # XGBoostShotClassifier
 
-*Project Overview*
+**Project Overview**
 
 This project develops an XGBoost-based model to predict shot outcomes in the NBA using shot-level data from the 2015–2016 season. The model estimates the probability of making each shot based on player identity, team, shot type, and court zone. These probabilities are weighted by shot value (2 or 3 points) to generate expected points tables for players across all shot types and court areas.
 
 The primary goal is to assess the reliability of XGBoost for predicting shot success and to derive insights for coaches and analysts on high- and low-value shot selection
 
-Data
+**Data**
 
-Source: NBA shot-level data, 2015–2016 season
+**Source**: NBA shot-level data, 2015–2016 season
 
 
-Features Used:
+**Features Used:**
 
 Player 
 Team
@@ -21,20 +21,21 @@ Court zone
 Target Variable: SHOT_MADE_FLAG 
 
 
-Preprocessing:
+**Preprocessing:**
 
 Categorical variables are one-hot encoded
 Backcourt shots removed for relevance
 Only shots with sufficient frequency considered in final table
 
 
-Model: XGBoost Classifier
+**Model: XGBoost Classifier**
 
 Gradient boosting framework: each tree corrects errors of previous trees
 Probability output for each shot
 
+Stores in XGModel.py module, for functions including: tuning hyper-parameters and running the model (train_xgb_tuned), running the model with fixed hyperparameters (league_xgb_tuned) and ranking teams based on model accuracy score (make_team_ranking_report)
 
-Pipeline:
+**Pipeline:**
 
 One-hot encoding for categorical variables
 Randomized hyperparameter search with 3-fold cross-validation
@@ -43,7 +44,7 @@ Randomized hyperparameter search with 3-fold cross-validation
 Metrics Evaluated: Accuracy, Confusion Matrices
 
 
-Output:
+**Output:**
 
 Expected points per player per shot type and court zone
 Comparison with true shooting percentages
