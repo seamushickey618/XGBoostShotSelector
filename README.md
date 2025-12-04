@@ -9,7 +9,7 @@ The primary goal is to assess the reliability of XGBoost for predicting shot suc
 **Data**
 
 **Source**: NBA shot-level data, 2015–2016 season
-https://github.com/wyatt-ai/nba-movement-data/tree/master/data/shots 
+https://github.com/wyatt-ai/nba-movement-data/tree/master/data/shots : shots.csv
 
 **Features Used:**
 
