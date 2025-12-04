@@ -70,7 +70,7 @@ matplotlib
 jupyter`
 
 
-Final Report Visualization:
+Final Report Visualization made in Tableau using the `wiz_full_analysis.csv` filtered to include only the starting 5 players
 
 <img width="1274" height="1024" alt="Sheet 4" src="https://github.com/user-attachments/assets/f115d9b7-142e-4192-8976-a7794aea01b3" />
 
