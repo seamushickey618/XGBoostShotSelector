@@ -2,7 +2,7 @@
 
 **Project Overview**
 
-This project develops an XGBoost-based model to predict shot outcomes in the NBA using shot-level data from the 2015–2016 season. The model estimates the probability of making each shot based on player identity, team, shot type, and court zone. These probabilities are weighted by shot value (2 or 3 points) to generate expected points tables for players across all shot types and court areas.
+This project develops an XGBoost-based model to predict shot outcomes in the NBA using shot-level data from the 2015–2016 season. The model estimates the probability of making each shot based on player , team, shot type, and court zone. These probabilities are weighted by shot value (2 or 3 points) to generate expected points tables for players across all shot types and court areas.
 
 The primary goal is to assess the reliability of XGBoost for predicting shot success and to derive insights for coaches and analysts on high- and low-value shot selection
 
@@ -23,24 +23,7 @@ NBA shot-level data, 2015–2016 season
 **Target Variable:** Shot made / missed
 
 
-**Preprocessing:**
-
-- Categorical variables are one-hot encoded
-- Backcourt shots removed for relevance
-- Only shots with sufficient frequency considered in final table
-
-
-**Model: XGBoost Classifier & Module**
-
-- Gradient boosting framework: each tree corrects errors of previous trees
-Probability output for each shot
-
-- *`XGModel.py` module*, stores functions including: tuning hyperparameters and running the model `train_xgb_tuned`, running the model with fixed hyperparameters `league_xgb_tuned` and ranking teams based on model accuracy score `make_team_ranking_report`
-
-**Pipeline:**
-
-- One-hot encoding for categorical variables
-- Randomized hyperparameter search with 3-fold cross-validation
+**`XGModel.py`** module* stores functions including: tuning hyperparameters and running the model `train_xgb_tuned`, running the model with fixed hyperparameters `league_xgb_tuned` and ranking teams based on model accuracy score `make_team_ranking_report`
 
 
 **Metrics Evaluated:** Accuracy, Confusion Matrices
@@ -50,17 +33,18 @@ Probability output for each shot
 
 - Expected points per player per shot type and court zone
 - Comparison with true shooting percentages
-- `wiz_full_analysis.csv` contains results from all Wizards shots taken over 25 times
+- `wiz_full_analysis.csv` contains results from running the `Main.ipynb` notebook
 
 **Other softwares used in project:** 
-- Excel: used to isolate the results for the starting 5 players after full analysis stage
+- Excel: used to isolate the results for the starting 5 players from `wiz_full_analysis.csv`
 - Tableau: used for the visualization of the final report
 
 **Use of ChatGPT:** 
-- Guidance on model structure and navigating libraries `scikit-learn` and `xgboost`
+- Guidance on model structure 
+- Assistance navigating libraries `scikit-learn` and `xgboost`
 - Troubleshooting syntax 
 - Visualizing confusion matrices in `seaborn`
-
+  
 **Usage**
 
 Clone the repository:
@@ -68,10 +52,10 @@ Clone the repository:
 
 
 Install dependencies:
-`pip install -r requirements.txt`
+`pip install -r Requirements.txt`
 
 
-Run the model training and evaluation notebook:
+Run the notebook:
 `jupyter notebook Main.ipynb`
 
 
@@ -82,7 +66,8 @@ numpy
 scikit-learn
 xgboost
 seaborn
-matplotlib`
+matplotlib
+jupyter`
 
 
 Final Report Visualization:
