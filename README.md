@@ -23,7 +23,7 @@ NBA shot-level data, 2015–2016 season
 **Target Variable:** Shot made / missed
 
 
-**`XGModel.py`** module* stores functions including: tuning hyperparameters and running the model `train_xgb_tuned`, running the model with fixed hyperparameters `league_xgb_tuned` and ranking teams based on model accuracy score `make_team_ranking_report`
+**`XGModel.py`** module stores functions including: tuning hyperparameters and running the model `train_xgb_tuned`, running the model with fixed hyperparameters `league_xgb_tuned` and ranking teams based on model accuracy score `make_team_ranking_report`
 
 
 **Metrics Evaluated:** Accuracy, Confusion Matrices
