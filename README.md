@@ -25,9 +25,9 @@ NBA shot-level data, 2015–2016 season
 
 **`XGModel.py`** module stores functions including: tuning hyperparameters and running the model `train_xgb_tuned`, running the model with fixed hyperparameters `league_xgb_tuned` and ranking teams based on model accuracy score `make_team_ranking_report`
 
+**Note**: the tuning function takes about 2m 15s to run, but it is only run once
 
 **Metrics Evaluated:** Accuracy, Confusion Matrices
-
 
 **Output:**
 
