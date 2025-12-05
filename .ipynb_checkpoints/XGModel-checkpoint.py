@@ -12,44 +12,44 @@ import warnings
 warnings.filterwarnings("ignore", message=".*use_label_encoder.*")
 
 
-# --------------------------
+
 # TRAIN + TUNE XGBoost Model
-# --------------------------
+
 def train_xgb_tuned(shots, features, target, param_grid):
 
-    # --------------------------
+
     # Prepare data
-    # --------------------------
+
     X = shots[features]
     y = shots[target]
 
-    # --------------------------
+
     # Identify and one-hot encode categorical features
-    # --------------------------
+
     cat_features = [c for c in X.columns if X[c].dtype == "object"]
     preprocessor = ColumnTransformer(
         [("cat", OneHotEncoder(handle_unknown="ignore"), cat_features)],
         remainder="passthrough"
     )
 
-    # --------------------------
+
     # Pipeline
-    # --------------------------
+
     pipeline = Pipeline([
         ("prep", preprocessor),
         ("xgb", XGBClassifier(eval_metric="logloss", n_jobs=1, random_state=42))
     ])
 
-    # --------------------------
+
     # Train/test split
-    # --------------------------
+
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, stratify=y, random_state=42
     )
 
-    # --------------------------
+
     # Randomized hyperparameter search
-    # --------------------------
+
     search = RandomizedSearchCV(
         pipeline,
         param_distributions=param_grid,
@@ -67,29 +67,30 @@ def train_xgb_tuned(shots, features, target, param_grid):
     print("\nBest Hyperparameters:")
     print(search.best_params_)
 
-    # --------------------------
+
     # Predictions
-    # --------------------------
+
     y_proba = best_model.predict_proba(X_test)[:, 1]
     y_pred = (y_proba > 0.5).astype(int)
 
-    # --------------------------
-    # Standard metrics
-    # --------------------------
+
+    # Accuracy
     accuracy = best_model.score(X_test, y_test)
 
-    # --------------------------
+
     # Overall predicted vs actual shot success
-    # --------------------------
+
     predicted_success_rate = np.mean(y_proba)
     actual_success_rate = np.mean(y_test)
 
-    # --------------------------
+
     # Confusion matrix
-    # --------------------------
+
     cm = confusion_matrix(y_test, y_pred)
 
-    # Normalize to percentages (overall)
+    
+    # Normalize to percentages 
+    
     cm_norm = cm / cm.sum()
 
     # Extract raw counts
@@ -101,7 +102,7 @@ def train_xgb_tuned(shots, features, target, param_grid):
     fn_freq = fn / (fn + tp)
     fp_freq = fp / (fp + tn)
 
-    # Create labeled matrix for annotation (showing proportion + frequency)
+    # Create labeled matrix showing proportion + frequency
     labels = np.array([
         [f"TN\n{cm_norm[0,0]*100:.1f}%\n({tn_freq*100:.1f}%)",
          f"FP\n{cm_norm[0,1]*100:.1f}%\n({fp_freq*100:.1f}%)"],
@@ -127,9 +128,9 @@ def train_xgb_tuned(shots, features, target, param_grid):
     plt.tight_layout()
     plt.show()
 
-    # --------------------------
+
     # Print metrics with interpretation
-    # --------------------------
+
     print(f"\nPredicted Overall Shot Success: {predicted_success_rate:.10f}")
     print(f"Actual Overall Shot Success: {actual_success_rate:.10f}")
     print(f"\nAccuracy: {accuracy:.3f}")
@@ -151,9 +152,9 @@ def league_xgb_tuned(shots, features, target):
         remainder="passthrough"
     )
 
-    # --------------------------
+
     # Pipeline
-    # --------------------------
+
     pipeline = Pipeline([
         ("prep", preprocessor),
         ("xgb", XGBClassifier(
@@ -161,9 +162,9 @@ def league_xgb_tuned(shots, features, target):
             n_jobs=1,
             random_state=42,
             
-            # --------------------------
+
             # FIXED HYPERPARAMETERS
-            # --------------------------
+
             subsample=0.75,
             n_estimators=750,
             max_depth=12,
@@ -172,54 +173,62 @@ def league_xgb_tuned(shots, features, target):
         ))
     ])
 
-    # --------------------------
+
     # Train/test split
-    # --------------------------
+
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, stratify=y, random_state=42
     )
 
-    # --------------------------
-    # Train model (no hyperparameter search)
-    # --------------------------
+
+    # Train model 
+
     pipeline.fit(X_train, y_train)
     best_model = pipeline  # naming consistency
 
-    # --------------------------
+
     # Predictions
-    # --------------------------
+
     y_proba = best_model.predict_proba(X_test)[:, 1]
     y_pred = (y_proba > 0.5).astype(int)
 
-    # --------------------------
-    # Standard metrics
-    # --------------------------
+
+    # Accuracy
+
     accuracy = best_model.score(X_test, y_test)
 
-    # --------------------------
+
     # Overall predicted vs actual shot success
-    # --------------------------
+
     predicted_success_rate = np.mean(y_proba)
     actual_success_rate = np.mean(y_test)
 
-    # --------------------------
+
     # Confusion matrix
-    # --------------------------
+
     cm = confusion_matrix(y_test, y_pred)
 
+    
     # Normalize to percentages (overall)
+    
     cm_norm = cm / cm.sum()
 
+    
     # Extract raw counts
+    
     tn, fp, fn, tp = cm.ravel()
 
+    
     # Compute conditional frequencies
+    
     tn_freq = tn / (tn + fp)
     tp_freq = tp / (tp + fn)
     fn_freq = fn / (fn + tp)
     fp_freq = fp / (fp + tn)
+    
 
-    # Create labeled matrix for annotation (showing proportion + frequency)
+    # Create labeled matrix for annotation showing proportion + frequency
+    
     labels = np.array([
         [f"TN\n{cm_norm[0,0]*100:.1f}%\n({tn_freq*100:.1f}%)",
          f"FP\n{cm_norm[0,1]*100:.1f}%\n({fp_freq*100:.1f}%)"],
@@ -246,18 +255,17 @@ def league_xgb_tuned(shots, features, target):
     plt.show()
 
 
-    # --------------------------
+
     # Print metrics
-    # --------------------------
+
     print(f"\nPredicted Overall Shot Success: {predicted_success_rate:.10f}")
     print(f"Actual Overall Shot Success: {actual_success_rate:.10f}")
     print(f"Accuracy: {accuracy:.3f}")
 
     return best_model, X_test, y_test, y_proba, accuracy, predicted_success_rate, actual_success_rate
 
-# --------------------------
+
 # Evaluate Model Performance on Teams
-# --------------------------
 
 def make_team_ranking_report(shots, features, model):
     teams = shots["TEAM_NAME"].unique()
